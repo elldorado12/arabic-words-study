@@ -22,7 +22,7 @@
  * and their stored order is random. Scoring happens offline with P1_pretest_analyse.py.
  */
 
-const DATAPIPE_ID = 'PASTE_DATAPIPE_EXPERIMENT_ID_HERE';
+const DATAPIPE_ID = '4IXxJ8cxIjQs';
 const AUDIO_DIR = 'audio/';
 const DONT_KNOW = 'لا أدري / ليست أياً منهما';
 const DONT_KNOW_ROOT = 'لا أدري / غير ذلك';
