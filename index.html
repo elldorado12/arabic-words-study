@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>تجربة لغوية قصيرة</title>
+  <!-- Versions pinned (checked against the npm registry on 20 Nov 2026). -->
+  <script src="https://unpkg.com/jspsych@8.4.0"></script>
+  <script src="https://unpkg.com/@jspsych/plugin-preload@2.1.0"></script>
+  <script src="https://unpkg.com/@jspsych/plugin-html-button-response@2.1.0"></script>
+  <script src="https://unpkg.com/@jspsych/plugin-audio-button-response@2.1.1"></script>
+  <script src="https://unpkg.com/@jspsych/plugin-survey-html-form@2.1.0"></script>
+  <script src="https://unpkg.com/@jspsych/extension-pipe@0.2.0"></script>
+  <link rel="stylesheet" href="https://unpkg.com/jspsych@8.4.0/css/jspsych.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <noscript>يجب تفعيل JavaScript لإجراء هذه التجربة.</noscript>
+
+  <!-- Consent is plain HTML, BEFORE jsPsych starts: if a person declines, no experiment
+       is created and nothing is recorded or sent anywhere. -->
+  <div id="consent" class="jspsych-content consent-page">
+    <h2 class="center">تجربة لغوية قصيرة</h2>
+    <p>شكراً لاهتمامك. هذه تجربة بحثية في مركز BCBL حول كيف يسمع الناطقون بالعربية الكلمات.</p>
+    <p>ستسمع كلمات قصيرة، معظمها كلمات <b>غير موجودة</b> في العربية، وتجيب عن أسئلة بسيطة عنها. تستغرق التجربة نحو <b>15 دقيقة</b>.</p>
+    <p>لا نجمع اسمك ولا بريدك الإلكتروني. تُحفظ إجاباتك برمز عشوائي فقط، وتُستخدم لأغراض البحث العلمي. مشاركتك طوعية، ويمكنك التوقف في أي وقت بإغلاق الصفحة؛ ما أجبت عنه حتى تلك اللحظة يُحفظ.</p>
+    <p>يُفضَّل استخدام <b>سماعات</b> في مكان هادئ.</p>
+    <p>بالضغط على «أوافق» تؤكد أن عمرك 18 سنة أو أكثر وأن العربية لغتك الأم، وأنك توافق على المشاركة.</p>
+    <div class="center">
+      <button id="agree" class="jspsych-btn">أوافق</button>
+      <button id="decline" class="jspsych-btn dontknow">لا أوافق</button>
+    </div>
+  </div>
+
+  <script src="trials.js"></script>
+  <script src="experiment.js"></script>
+</body>
+</html>
